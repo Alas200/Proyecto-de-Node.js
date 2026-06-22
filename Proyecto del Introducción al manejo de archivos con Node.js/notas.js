@@ -27,7 +27,7 @@ function listarNotas() {
     const data = fs.readFileSync(filePath, 'utf8');
     const notas = JSON.parse(data);
     
-    console.log('\n📋 --- TUS NOTAS ---');
+    console.log('\n --- TUS NOTAS ---');
     notas.forEach((nota, index) => {
         console.log(`${index + 1}. [${nota.titulo}]: ${nota.contenido}`);
     });
@@ -54,7 +54,7 @@ function eliminarNota(titulo) {
   }
 }
 
-//  EXPORTACIÓN: Hacemos públicas nuestras herramientas
+// 📦 EXPORTACIÓN: Hacemos públicas nuestras herramientas
 module.exports = {
     agregarNota,
     listarNotas,
