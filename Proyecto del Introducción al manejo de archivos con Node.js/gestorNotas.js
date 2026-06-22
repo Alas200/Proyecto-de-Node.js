@@ -15,3 +15,4 @@ gestor.eliminarNota('Compras');
 
 // 4. Volvemos a listar para confirmar que ya no existe
 gestor.listarNotas();
+
